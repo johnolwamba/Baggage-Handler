@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.baggagehandler.ScanCode"
+    tools:showIn="@layout/activity_scan_code">
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgScanTag"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Scan Tag"
+        android:id="@+id/txtScanTag"
+        android:layout_below="@+id/imgScanTag"
+        android:layout_alignLeft="@+id/imgScanTag"
+        android:layout_alignStart="@+id/imgScanTag" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check in"
+        android:id="@+id/optCheckIn"
+        android:layout_below="@+id/txtScanTag"
+        android:layout_alignRight="@+id/imgScanTag"
+        android:layout_alignEnd="@+id/imgScanTag"
+        android:layout_marginTop="62dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Location"
+        android:id="@+id/txtLocation"
+        android:layout_alignBaseline="@+id/optCheckIn"
+        android:layout_alignBottom="@+id/optCheckIn"
+        android:layout_toLeftOf="@+id/txtScanTag"
+        android:layout_toStartOf="@+id/txtScanTag" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sorter"
+        android:id="@+id/optSorter"
+        android:layout_below="@+id/optCheckIn"
+        android:layout_alignLeft="@+id/optCheckIn"
+        android:layout_alignStart="@+id/optCheckIn" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading"
+        android:id="@+id/optLoading"
+        android:layout_below="@+id/optSorter"
+        android:layout_alignLeft="@+id/optSorter"
+        android:layout_alignStart="@+id/optSorter" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offloading"
+        android:id="@+id/optOffLoading"
+        android:layout_below="@+id/optLoading"
+        android:layout_alignLeft="@+id/optLoading"
+        android:layout_alignStart="@+id/optLoading" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/optExit"
+        android:layout_below="@+id/optOffLoading"
+        android:layout_alignLeft="@+id/optOffLoading"
+        android:layout_alignStart="@+id/optOffLoading" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnScanSave"
+        android:layout_below="@+id/optExit"
+        android:layout_alignRight="@+id/optCheckIn"
+        android:layout_alignEnd="@+id/optCheckIn"
+        android:layout_marginTop="46dp" />
+</RelativeLayout>
