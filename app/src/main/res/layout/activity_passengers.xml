@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:padding="10dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.user.baggagehandler.Passengers"
-    tools:showIn="@layout/activity_passengers">
+    tools:context="com.example.user.baggagehandler.Passengers">
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"

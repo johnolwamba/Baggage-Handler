@@ -9,8 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.user.baggagehandler.StaffLogin"
-    tools:showIn="@layout/activity_staff_login">
+    tools:context="com.example.user.baggagehandler.StaffLogin">
 
     <EditText
         android:layout_width="wrap_content"
@@ -61,9 +60,14 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:id="@+id/btnLogin"
+        android:background="@color/red"
+        android:textColor="@color/white"
         android:layout_marginTop="49dp"
         android:layout_below="@+id/txtPassword"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"

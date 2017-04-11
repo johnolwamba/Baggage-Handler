@@ -9,7 +9,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.user.baggagehandler.Baggage"
-    tools:showIn="@layout/activity_baggage">
+    tools:context="com.example.user.baggagehandler.Baggage">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/baggageRecycler"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

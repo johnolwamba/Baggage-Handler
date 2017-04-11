@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/gray"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mercy Kimaku" />
+
+    <TextView
+        android:id="@+id/txtFlightNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="F_1234" />
+
+    <TextView
+        android:id="@+id/txtBaggageNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="B-3455" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status" />
+</LinearLayout>
